@@ -1,0 +1,328 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.heading {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    font-size: 200px;
+
+    padding-left: 50px;
+    background-image: url('./img/bavarian-beer-and-pretzels-on-a-table.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading a {
+    color: #c4893c;
+    text-decoration: none;
+}
+
+.heading a:hover {
+    color: #f5e9c1;
+}
+
+.heading p {
+    text-shadow: 0 0 150px #f5e9c1;
+}
+
+.SidePanel {
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    overflow-y: scroll;
+    color: antiquewhite;
+    box-shadow: 10px 10px 30px;
+    background-color: black;
+}
+
+.SidePanel p {
+    margin-top: 50px;
+}
+
+.SidePanel ul {
+    text-decoration: underline;
+}
+
+.SidePanel li {
+    margin-bottom: 5px;
+}
+
+.cooperate {
+    color: #f7dd8a;
+}
+
+.sponsor {
+    color: #c4893c;
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    border-block: 2px solid #c4893c;
+    margin: 240px 240px 0 240px;
+}
+
+.history p {
+    font-size: 80px;
+    color: #c4893c;
+    text-shadow: 3px 5px 64px #c4893c;
+    margin: 30px;
+}
+
+.HistoryBlock {
+    display: flex;  
+    margin: 130px 240px 0 240px;
+}
+
+.HistoryBlock p {
+    text-align: center;
+    color: #c4893c;
+    font-size: 18px;
+    border: 2px solid #c4893c;
+    padding: 20px;
+    margin: 10px;
+} 
+
+.HistoryBlock img {
+    width: 400px;
+    height: 300px;
+}
+
+.boy {
+    display: flex;
+    justify-content: center;
+    border-block: 2px solid #c4893c;
+    margin: 240px 240px 0 240px;
+}
+
+.boy p {
+    font-size: 80px;
+    color: #c4893c;
+    text-shadow: 3px 5px 64px #c4893c;
+    margin: 30px;
+}
+
+.assortment {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.containerOne, 
+.containerTwo,
+.containerThree {
+  position: relative;
+  width: 20%;
+}
+
+.ImgPivo, 
+.ImgPivoDark,
+.ImgSidr {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay, 
+.overlayTwo,
+.overlayThree {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c4893c;
+}
+
+.containerOne:hover .overlay {
+  opacity: 0.9;
+}
+
+.containerTwo:hover .overlayTwo {
+    opacity: 0.9;
+}
+
+.containerThree:hover .overlayThree {
+    opacity: 0.9;
+}
+
+.text, 
+.textPivo,
+.textSidr {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.assortments {
+    display: flex;
+    justify-content: center;
+}
+
+.assortmentBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.TextSale {
+    color: #c4893c;
+    font-size: 15px;
+    text-align: center;
+} 
+
+.interior {
+    display: flex;
+    justify-content: center;
+    border-block: 2px solid #c4893c;
+    margin: 240px 240px 0 240px;
+}
+
+.interior p {
+    font-size: 80px;
+    color: #c4893c;
+    text-shadow: 3px 5px 64px #c4893c;
+    margin: 30px;
+}
+
+.ImgInteriorOne {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    margin: 90px 0 0 330px;
+    z-index: 2;
+    border: 5px solid rgba(255, 255, 255, 0.79);
+    box-shadow: 10px 15px 15px white;
+}
+
+.ImgInteriorTwo {
+    position: absolute;
+    width: 30%;
+    height: auto; 
+    margin: 250px 0 0 650px;
+    z-index: 1;
+    border: 5px solid rgba(255, 255, 255, 0.79);
+    box-shadow: 10px 15px 15px white;
+}
+
+.ImgInteriorThree {
+    position: absolute;
+    width: 30%;
+    height: auto; 
+    margin: 850px 0 0 330px;
+    z-index: 0;
+    border: 5px solid rgba(255, 255, 255, 0.79);
+    box-shadow: 10px 15px 15px white;
+}
+
+.stock {
+    display: flex;
+    justify-content: center;
+    border-block: 2px solid #c4893c;
+    margin: 1340px 240px 0 240px;
+}
+
+.stock p {
+    font-size: 80px;
+    color: #c4893c;
+    text-shadow: 3px 5px 64px #c4893c;
+    margin: 30px;
+}
+
+.LinkskOne {
+    margin-left: 280px;
+}
+
+.ActivStocks {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: 80px;
+}
+
+.links {
+    padding-bottom: 20px;
+    box-shadow: 0px 270px 95px 160px #dbc788db;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    margin-right: 45px;
+    padding-bottom: 2px;
+    color: #c4893c;
+    text-decoration-color: #6b4f29;
+    
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.ContainerLinks {
+    display: flex;
+    margin: 50px 200px 0 240px;
+    text-align: center;
+}
+
+.ContainerLinksImgOne,
+.ContainerLinksImgTwo {
+    width: 65%;
+    height: auto;
+    border: 2px solid #c4893c;
+    padding: 10px;
+    
+}
+
+.ContainerLinksOne {
+    font-size: 19px;
+    color: #6b4f29;
+    border: 2px solid #6b4f29;
+    padding: 70px 30px 70px 30px;
+    margin-right: 10px;
+}
+
+.ContainerLinksTwo {
+    font-size: 19px;
+    color: #6b4f29;
+    border: 2px solid #6b4f29;
+    padding: 70px 30px 70px 30px;
+    margin-right: 10px;
+
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: black;
+    color: #c4893c;
+    width: 100%;
+    font-size: 20px;
+    border-top: 3px solid #6b4f29;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+
+.smart {
+    margin-left: 210px;
+}
+
+.peach {
+    margin-right: 50px;
+}
